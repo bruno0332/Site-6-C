@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inteligência Artificial</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="history.html">História</a></li>
+                <li><a href="computadoresmodernos.html">Computadores Modernos</a></li>
+                <li><a href="impact.html">Impacto na Sociedade</a></li>
+                <li><a href="Educação.html">Educação e Aprendizado</a></li>
+                <li><a href="ia.html">Inteligência Artificial</a></li>
+                <li><a href="economia.html">Economia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="historia">
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h4>O que é Inteligência Artificial?</h4>
+                    <p>A Inteligência Artificial (IA) é uma área da ciência da computação dedicada ao desenvolvimento de sistemas que podem realizar tarefas que normalmente requerem inteligência humana. Isso inclui habilidades como reconhecimento de fala, tomada de decisões, e aprendizado com dados. A IA utiliza algoritmos complexos e redes neurais para simular processos cognitivos e melhorar continuamente seu desempenho através de aprendizado automático.</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>Impactos Sociais da IA</h4>
+                    <p>A IA tem o potencial de transformar profundamente a sociedade. Ela pode melhorar a eficiência de processos em diversos setores, como saúde, onde diagnósticos rápidos e precisos são possíveis com o uso de IA. No entanto, também existem preocupações sobre privacidade e segurança, já que o uso de dados pessoais por sistemas de IA pode levar a problemas éticos. A automação impulsionada pela IA pode reduzir a necessidade de alguns empregos, enquanto cria novas oportunidades em áreas emergentes.</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>Impactos Econômicos da IA</h4>
+                    <p>No campo econômico, a IA pode impulsionar o crescimento e a inovação, aumentando a produtividade e gerando novas indústrias e mercados. Empresas que adotam tecnologias baseadas em IA podem obter uma vantagem competitiva significativa. No entanto, a automação também pode levar a uma redistribuição dos empregos, com algumas funções sendo substituídas por máquinas enquanto outras são criadas. É crucial que políticas e estratégias sejam desenvolvidas para lidar com as mudanças no mercado de trabalho e garantir que os benefícios da IA sejam amplamente distribuídos.</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>Desafios e Considerações Futuras</h4>
+                    <p>Enquanto a IA promete muitos avanços, também apresenta desafios significativos. A regulação da IA e a garantia de que seu uso é ético e justo são questões em aberto. A necessidade de formação adequada para lidar com novas tecnologias e a criação de estruturas para apoiar a transição dos trabalhadores afetados pela automação são essenciais para maximizar os benefícios da IA enquanto minimiza seus impactos negativos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 6°C para Feira Cultural. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

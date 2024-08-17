@@ -1,0 +1,297 @@
+/* Reseta margens e paddings padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00FF00;
+    background-image: url(https://i.pinimg.com/originals/53/37/15/5337157737f980c13793e5388a0283ec.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho e rodapé */
+header, footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+    color: #00FF00;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+footer {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Estilos da navegação */
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #00FF00;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #00FF00;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle .bar {
+    background-color: #00FF00;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajuste a posição vertical se necessário */
+    right: 10px;
+    background-color: #111;
+    width: calc(100% - 20px); /* Ajusta a largura do menu para não cortar nas bordas */
+    max-width: 300px; /* Define uma largura máxima para o menu */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
+}
+
+nav ul.show li.close-btn {
+    display: block; /* Mostra o botão de fechar quando o menu está aberto */
+    text-align: right;
+    cursor: pointer;
+    color: #00FF00;
+    font-size: 1.5em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr; /* Alinha a linha do tempo em uma coluna em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    input, select, textarea {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .timeline-event img {
+        max-width: 100%; /* Garante que as imagens se ajustem dentro do container */
+    }
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* Estilo de seção */
+section {
+    margin-bottom: 2rem;
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+h2, h3, h4 {
+    color: #00FF00;
+    border-bottom: 1px solid #00FF00;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo da linha do tempo */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+.timeline-event {
+    background-color: #111;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.timeline-event img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que as imagens não ultrapassem o container */
+    border-bottom: 1px solid #00FF00;
+}
+
+.timeline-event h4 {
+    color: #00FF00;
+    margin: 10px 0 5px;
+}
+
+.timeline-event p {
+    margin: 0;
+}
+
+/* Estilos para imagens e vídeos */
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+video {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+/* Cartões de conteúdo */
+.card {
+    background: #111;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #00FF00;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-radius: 0%;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #00FF00;
+    color: #fff;
+    border-radius: 0%;
+}
+
+/* Estilos para formulários */
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}

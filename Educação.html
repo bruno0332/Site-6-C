@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação e Computadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Educação e Computadores</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="history.html">História</a></li>
+                <li><a href="computadoresmodernos.html">Computadores Modernos</a></li>
+                <li><a href="impact.html">Impacto na Sociedade</a></li>
+                <li><a href="Educação.html">Educação e Aprendizado</a></li>
+                <li><a href="ia.html">Inteligência Artificial</a></li>
+                <li><a href="economia.html">Economia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="historia">
+            <h2>Educação e Computadores</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h4>Introdução</h4>
+                    <p>A introdução dos computadores na educação transformou a forma como aprendemos e ensinamos. Desde o início da computação até os avanços atuais, os computadores têm desempenhado um papel crucial na modernização e expansão dos métodos educacionais.</p>
+                    <img src="images/computers-introduction-education.jpg" alt="Introdução dos computadores na educação" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+                <div class="timeline-event">
+                    <h4>Computadores na Sala de Aula</h4>
+                    <p>Com a chegada dos computadores, o ambiente de sala de aula evoluiu significativamente. Ferramentas como processadores de texto, planilhas e apresentações multimídia facilitaram o ensino e permitiram aos alunos desenvolver habilidades tecnológicas essenciais para o mercado de trabalho.</p>
+                    <img src="images/computers-in-classroom.jpg" alt="Computadores na sala de aula" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+                <div class="timeline-event">
+                    <h4>Educação a Distância</h4>
+                    <p>Os computadores permitiram a expansão da educação a distância. Plataformas de e-learning e cursos online tornaram-se comuns, possibilitando que estudantes de qualquer lugar do mundo acessem educação de alta qualidade sem a necessidade de presença física em uma instituição de ensino.</p>
+                    <img src="images/online-education.jpg" alt="Educação a distância" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+                <div class="timeline-event">
+                    <h4>Ferramentas Educacionais e Software</h4>
+                    <p>O desenvolvimento de software educacional, como aplicativos de aprendizado, simuladores e jogos educativos, tem proporcionado novas maneiras interativas e envolventes para os alunos aprenderem conceitos complexos e desenvolverem habilidades.</p>
+                    <img src="images/educational-software.jpg" alt="Ferramentas educacionais e software" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+                <div class="timeline-event">
+                    <h4>Impacto no Ensino e Aprendizado</h4>
+                    <p>A introdução de computadores e tecnologias digitais no ensino tem promovido a personalização do aprendizado. Ferramentas como sistemas de gestão de aprendizado (LMS) e software de análise educacional ajudam professores a acompanhar o progresso dos alunos e adaptar o ensino às necessidades individuais.</p>
+                    <img src="images/personalized-learning.jpg" alt="Impacto no ensino e aprendizado" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+                <div class="timeline-event">
+                    <h4>Desafios e Oportunidades</h4>
+                    <p>Apesar dos muitos benefícios, a integração dos computadores na educação também apresenta desafios, como a necessidade de infraestrutura adequada, treinamento para professores e a necessidade de abordar a desigualdade no acesso à tecnologia.</p>
+                    <img src="images/education-challenges-opportunities.jpg" alt="Desafios e oportunidades na educação" style="width: 100%; max-width: 400px; border: 2px solid #ccc; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 6°C para Feira Cultural. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

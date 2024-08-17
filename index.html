@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Feira Cultural</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .welcome-section {
+            background-color: #302b2bef;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 
+                0 0 5px #00FF00, 
+                0 0 10px #00FF00, 
+                0 0 15px #00FF00, 
+                0 0 20px #00FF00, 
+                0 0 25px #00FF00, 
+                0 0 30px #00FF00;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feira Cultural: Invenção do Computador</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="history.html">História do Computador</a></li>
+                <li><a href="computadoresmodernos.html">Computadores Modernos</a></li>
+                <li><a href="impact.html">Impacto na Sociedade</a></li>
+                <li><a href="Educação.html">Educação e Aprendizado</a></li>
+                <li><a href="IA.html">Inteligência Artificial</a></li>
+                <li><a href="Economia.html">Economia e Trabalho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h2>Entrada na Feira Cultural: Mergulhe na Matrix do 6º C e Descubra o Futuro!</h2>
+            <p>
+                Você está prestes a mergulhar em um <strong>universo digital</strong> onde a realidade se entrelaça com a tecnologia. Este site, meticulosamente codificado por mim, <strong>Bruno Escoton da Silva</strong>, professor de matemática, é uma verdadeira homenagem aos <strong>jovens do 6º ano C</strong> — os verdadeiros "<strong>Neo</strong>" e "<strong>Trinity</strong>" desta jornada!
+            
+                Prepare-se para <strong>"desconectar-se da Matrix"</strong> e explorar uma <strong>linha do tempo interativa</strong> que revela como a invenção dos computadores moldou nosso mundo. Nossos brilhantes agentes do 6º ano C prepararam uma experiência imersiva para você, repleta de descobertas sobre as <strong>mentes visionárias</strong> por trás das máquinas e como sua evolução nos trouxe ao presente.
+            
+                Durante sua exploração, você encontrará que, assim como na Matrix, a <strong>verdade está além das aparências</strong>. Questione a realidade, desafie seus sentidos e aproveite cada momento desta Feira Cultural. Bem-vindo(a) à nossa Matrix, onde cada clique é uma <strong>nova descoberta</strong>!
+            </p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 6°C para Feira Cultural. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+            const closeBtn = document.getElementById('close-btn');
+
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
+            });
+
+            closeBtn.addEventListener('click', function() {
+                navList.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
