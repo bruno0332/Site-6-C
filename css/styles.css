@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Adicionado para evitar overflow horizontal */
 }
 
 /* Estilos do cabeçalho e rodapé */
@@ -47,6 +48,7 @@ footer p {
 /* Estilos da navegação */
 nav {
     position: relative;
+    z-index: 1000;
 }
 
 nav ul {
@@ -105,7 +107,6 @@ nav ul.show {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
 }
 
 nav ul.show li.close-btn {
@@ -131,7 +132,7 @@ nav ul.show li.close-btn {
     }
 
     .timeline {
-        grid-template-columns: 1fr; /* Alinha a linha do tempo em uma coluna em telas menores */
+        grid-template-columns: 1fr !important; /* Força uma coluna em telas menores */
     }
 }
 
@@ -160,6 +161,10 @@ nav ul.show li.close-btn {
 
     .timeline-event img {
         max-width: 100%; /* Garante que as imagens se ajustem dentro do container */
+    }
+
+    main, .timeline, .card {
+        max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura da tela */
     }
 }
 
@@ -190,7 +195,7 @@ h2, h3, h4 {
 /* Estilo da linha do tempo */
 .timeline {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Inicialmente em duas colunas */
     gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
