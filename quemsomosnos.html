@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos Nós - Feira Cultural</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        main {
+            padding: 20px;
+            margin-bottom: 50px; /* Espaço para o rodapé */
+        }
+        .welcome-section {
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 
+                0 0 5px #00FF00, 
+                0 0 10px #00FF00, 
+                0 0 15px #00FF00, 
+                0 0 20px #00FF00, 
+                0 0 25px #00FF00, 
+                0 0 30px #00FF00;
+            margin: 20px;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Aumenta o tamanho mínimo dos cards */
+            gap: 20px;
+            margin: 20px;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 
+                0 0 5px #00FF00, 
+                0 0 10px #00FF00, 
+                0 0 15px #00FF00, 
+                0 0 20px #00FF00, 
+                0 0 25px #00FF00, 
+                0 0 30px #00FF00;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px; /* Aumenta o padding interno dos cartões */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            
+        }
+        .card img {
+            border-radius: 50%;
+            width: 150px; /* Aumenta a largura da imagem */
+            height: 150px; /* Aumenta a altura da imagem */
+            object-fit: cover;
+            margin-bottom: 15px; /* Aumenta o espaço abaixo da imagem */
+        }
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.5em; /* Aumenta o tamanho da fonte do título */
+        }
+        .card p {
+            margin: 0;
+            color: #555;
+            font-size: 1.1em; /* Aumenta o tamanho da fonte da descrição */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Adiciona um efeito de zoom ao passar o mouse */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra do card ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quem Somos Nós - Feira Cultural</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="history.html">História do Computador</a></li>
+                <li><a href="computadoresmodernos.html">Computadores Modernos</a></li>
+                <li><a href="impact.html">Impacto na Sociedade</a></li>
+                <li><a href="Educação.html">Educação e Aprendizado</a></li>
+                <li><a href="IA.html">Inteligência Artificial</a></li>
+                <li><a href="Economia.html">Economia e Trabalho</a></li>
+                <li><a href="quemsomosnos.html">Quem Somos Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h2>Quem Somos Nós</h2>
+            <p>
+                Conheça os brilhantes participantes da nossa Feira Cultural. Cada um de nós trouxe sua criatividade e empenho para criar uma experiência única sobre a invenção dos computadores. Abaixo, você encontrará um card para cada membro da equipe. Agradecemos a todos pelo trabalho árduo e dedicação!
+            </p>
+        </section>
+        <section class="cards-container">
+            <!-- Cards -->
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <!-- Adicione os cards restantes aqui -->
+            <!-- Exemplo do próximo card -->
+            <div class="card">
+                <img src="path/to/photo2.jpg" alt="Participante 2">
+                <h3>Nome do Participante 2</h3>
+                <p>Descrição do Participante 2</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <div class="card">
+                <img src="path/to/photo1.jpg" alt="Participante 1">
+                <h3>Nome do Participante 1</h3>
+                <p>Descrição do Participante 1</p>
+            </div>
+            <!-- Continue adicionando cards conforme necessário -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Feira Cultural. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
