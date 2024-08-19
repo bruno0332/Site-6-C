@@ -76,6 +76,7 @@ nav ul li a:hover {
     background-color: #00FF00;
     color: #000;
     text-decoration: underline;
+    border-radius: 5px;
 }
 
 /* Menu hambúrguer */
